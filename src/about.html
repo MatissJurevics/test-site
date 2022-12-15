@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anframe | About</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav avg-comp="navbar" ></nav>
+    <main>
+        <section class="container about">
+            <div class="content-text">
+                <h1>About AnFrame</h1>
+                <p>AnFrame is a very basic javascript framework developed by Matiss Jurevics after he got bored and couldnt think of what to create for his web development assignment.</p>
+                <h2>How does it work?</h2>
+                <p>AnFrame is interactive with the use of "pagestate". pagestate is like a rudementary virtual dom similar to ones used in frameworks like react. pagestate contains variables which are accessed in vanilla html using special syntax and attributes. The way Anframe works is by</p>
+                <ol>
+                    <li>Hiding all content on the website</li>
+                    <li>Scanning through the site and rendering anything in valid avg syntax</li>
+                    <li>Revealing the site upon completion</li>
+                    <li>Re-rendering the site once the user makes a change in the state</li>
+                </ol>
+                <p>AnFrame will be worked on even after the assignment is complete and will be improved with features such as itiration, emitters as well as performance and security upgrades.</p>
+                <a href="/src/docs/index.html"" class="btn btn-primary">Learn More</a>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../AvgLib/anframe.js"></script>
+</body>
+</html>

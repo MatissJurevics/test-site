@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anframe | Documentation - Components</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+
+    <main class="docs">
+      <div class="side-nav" avg-comp="sidenav">
+        
+      </div>
+      <div class="content">
+        <section class="container docs-container">
+          <div class="content-text docs-container-text">
+            <h1>Components</h1>
+            <p>A component is a reusable bit of html that can placed throughout your web-app. Components are useful as like variables, if you change the content of the component, all instances of that component are changed simultaniously.</p>
+            <div class="terminal docs-terminal">
+              <div class="top-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p class="code">&lt;div avg-comp=<span>"navbar"</span> \&gt;</p>
+              <p class="comment">// InnerHTML will change to the value of whatever is in /components/navbar.html</p>
+            </div>
+          </div>
+          <div class="bot-nav">
+            <a href="/src/docs/installation.html">&lt;-- installation</a>
+            <a href="/src/docs/variables.html">variables --&gt;</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../../AvgLib/anframe.js"></script>
+  </body>
+</html>

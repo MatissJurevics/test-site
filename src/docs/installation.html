@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anframe | Documentation - Installation</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+
+    <main class="docs">
+      <div class="side-nav" avg-comp="sidenav">
+        
+      </div>
+      <div class="content">
+        <section class="container docs-container">
+          <div class="content-text docs-container-text">
+            <h1>Installation</h1>
+            <ol>
+              <li>Download the avglib file from <a class="down-link" href="#">Here</a> and add it to your projects directory</li>
+              <li>Link your HTML to /avglib/anframe.js and link your script to /avglib/utils/pagestate.js</li>
+              <li>Create a components directory</li>
+              <li>In order to do anything meaninful you need to import pagestate and create variables</li>
+            </ol>
+            <div class="terminal">
+              <div class="top-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p class="code">Import { <span>pageState</span> as <span>ps</span> } from <span>"/AvgLib/utils/pageState.js"</span></p>
+              <p class="code">ps.varInit(<span>"counter"</span>, 2)</p>
+              <p class="comment">// Creates a variable called counter with the value 2</p>
+            </div>
+            <div class="terminal">
+              <div class="top-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p class="code">&lt;test&gt;<span>&#123; &#123;counter&#125; &#125;</span>&lt;\test&gt;</p>
+              <p class="comment">// Type that without the spaces to render the variable</p>
+            </div>
+            
+          </div>
+          <div class="bot-nav">
+            <a href="/src/docs/index.html">&lt;-- Getting Started</a>
+            <a href="/src/docs/components.html">Components --&gt;</a>
+          </div>
+          
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../../AvgLib/anframe.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anframe | Contact</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+    <main class="contact">
+      <h1>Get in Touch</h1>
+      <form id="form" method="post">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" placeholder="Your Name" />
+        <label for="email">Your email</label>
+        <input type="email" placeholder="johndoe@mail.com" />
+        <label for="">Subject</label>
+        <div>
+          <div class="radio"> 
+            <input type="radio" name="subject" value="Issue" id="" />
+            <label for="subject1">Issue</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="subject" value="Idea" />
+            <label for="subject2">Idea</label>
+          </div>
+         <div class="radio">
+            <input type="radio" name="subject" value="Other" />
+            <label for="subject3">Other</label>
+         </div>
+        </div>
+        <label for="job">Occupation</label>
+        <select name="job" id="job">
+          <option value="1">Software engineer</option>
+          <option value="2">Web Developer</option>
+          <option value="3">Student</option>
+          <option value="4">Project Manager</option>
+          <option value="5">Other</option>
+        </select>
+        <label for="message">Your message</label>
+        <textarea
+          id="message"
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+        <div>
+          <input type="checkbox" name="consent" id="" />
+          <label for="consent">
+            I consent to having my data harvested upon this form being
+            succesfully received.
+          </label>
+        </div>
+        <button id="form-submit" type="submit" class="btn btn-primary submit">Send</button>
+      </form>
+    </main>
+    <script type="module" src="/assets/js/sanitize.js"></script>
+    <script type="module" src="../AvgLib/anframe.js"></script>
+  </body>
+</html>

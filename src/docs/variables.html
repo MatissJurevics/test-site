@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anframe | Documentation - Variables</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+
+    <main class="docs">
+      <div class="side-nav" avg-comp="sidenav">
+        
+      </div>
+      <div class="content">
+        <section class="container docs-container">
+          <div class="content-text docs-container-text">
+            <h1>Variables</h1>
+            <p>A variable in anframe differs from a variable in javascript only because it is registered in pagestate. Apart from that, it functions identically to a normal javascript variable. </p>
+            <div class="terminal docs-terminal">
+              <div class="top-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p class="comment">// Javascript</p>
+              <p class="code">import { <span>pagestate</span> as <span>ps</span> } from <span>"/AvgLib/utils/pageState.js"</span></p>
+              <p class="code">pg.varInit("counter", 0)</p>
+              <p class="code">console.log( <span>pg.variables["counter"]</span> )</p>
+            </div>
+          </div>
+          <div class="terminal">
+            <div class="top-nav">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <p class="code">&lt;test&gt;<span>&#123; &#123;counter&#125; &#125;</span>&lt;\test&gt;</p>
+            <p class="comment">// This will display 0 (note that you need to get rid of the spaces )</p>
+          </div>
+          <div class="bot-nav">
+            <a href="/src/docs/components.html">&lt;-- Components</a>
+            <a href="/src/docs/conditionals.html">Conditionals --&gt;</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../../AvgLib/anframe.js"></script>
+  </body>
+</html>

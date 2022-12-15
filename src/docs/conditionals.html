@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anframe | Documentation - Conditionals</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+
+    <main class="docs">
+      <div class="side-nav" avg-comp="sidenav">
+        
+      </div>
+      <div class="content">
+        <section class="container docs-container">
+          <div class="content-text docs-container-text">
+            <h1>Conditionals</h1>
+            <p>A conditional statement allows a html element to render only if a certain condition is met. This allows you to create functionality such as parts of a dashboard that only render if you have certain permissions.</p>
+            <div class="terminal docs-terminal">
+              <div class="top-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p class="code">&lt;div avg-if=<span>"counter == 7"</span>\&gt;</p>
+              <p class="comment">// Will render content inside the div if counter is equal to 7</p>
+            </div>
+            <p>NOTE: variables used in conditionals must be registered in pagestate. Any condition in avg-if will render as if its a statement in normal js, i.e. && and || can be used.</p>
+          </div>
+          <div class="bot-nav">
+            <a href="/src/docs/variables.html">&lt;-- variables</a>
+            <a href="/src/docs/index.html">Getting Started --&gt;</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../../AvgLib/anframe.js"></script>
+  </body>
+</html>

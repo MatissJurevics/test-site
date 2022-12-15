@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🚀 AnFrame.js | Yet Another Javascript Framework</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <nav avg-comp="navbar"></nav>
+
+    <header>
+      <img src="../assets/images/Rectangle 9.svg" alt="" />
+      <h1 class="title">AnFrame.JS</h1>
+      <h2>
+        Yet Another Javascript Framework To Make Average At Best Web
+        Applications...
+      </h2>
+      <div class="custom-shape-divider-bottom-1669740709">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="content-text">
+        <h1>Make Changes Everywhere at Once</h1>
+        <p>
+          With AnFrame components, you can easily make changes to commonly used
+          HTML elements like the navbar and footer.
+        </p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="terminal">
+        <div class="top-bar">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="code text">
+          <p>&lt;nav avg-comp="<span>navbar</span>"/&gt;</p>
+          <p class="comment">
+            // Will display whatever is in /component/navbar.html
+          </p>
+          <p class="comment">// i.e.</p>
+          <p>&lt;nav&gt</p>
+          <p>&#9;&lt;li&gt;<span>Home</span>&lt;/li&gt;</p>
+          <p>&#9;&lt;li&gt;<span>About</span>&lt;/li&gt;</p>
+          <p>&#9;&lt;li&gt;<span>Contact</span>&lt;/li&gt;</p>
+          <p>&lt;/nav&gt</p>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="terminal">
+        <div class="top-bar">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="code text">
+          <p>&lt;div avg-if="<span>value == 2</span>"&gt;</p>
+          <p>&#9;&lt;h1&gt;<span>Value is 2</span>&lt;/h1&gt;</p>
+          <p>&lt;/div&gt</p>
+          <p class="comment">// Will display the h1 tag if value is 2</p>
+        </div>
+      </div>
+      <div class="content-text">
+        <h1>Render HTML Only When You Need To</h1>
+        <p>
+          With AnFrame Conditionals, you can render certain HTML only if a
+          certain condition is met.
+        </p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </section>
+    <section class="container container-center">
+      <h1 class="testemonial-h1">Testemonials</h1>
+      <div class="testemonial">
+        <div class="person">
+          <img
+            src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+          <div>
+            <p class="name">John Doe</p>
+            <p>Some guy off the street</p>
+          </div>
+        </div>
+        <p class="quote">
+          That doesnt sound like a good idea if I'm going to be completely
+          honest,
+        </p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="content-text">
+        <h1>Video Tutorial for a Better framework</h1>
+        <p>
+          Since you reached the bottom that means that you want to learn how to
+          use a Javascript framework (obviously). With that said here is a
+          tutorial for a framework that is infinetaly better than this one
+        </p>
+      </div>
+      <iframe
+        class="video-frame"
+        src="https://www.youtube.com/embed/qZXt1Aom3Cs"
+        title="Vue JS Crash Course"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section class="container container-center">
+      <h1 class="small-h">
+        Still Want to Learn This? Heres The Vuejs Website.
+      </h1>
+
+      <iframe class="vue-site" src="https://www.vuejs.org" frameborder="0">
+      </iframe>
+    </section>
+    <section class="container container-center">
+      <h1 class="center">Example of What AnFrame Can Do</h1>
+      <div class="flex-row">
+        <div class="fizzbuzz">
+          <h1 class="counter">{{count}}</h1>
+          <button avg-on:click="increment" class="btn btn-primary">
+            Click Me!
+          </button>
+          <h2 avg-if="count % 3 == 0 && count % 5 != 0">Fizz</h2>
+          <h2 avg-if="count % 3 != 0 && count % 5 == 0">Buzz</h2>
+          <h2 avg-if="count % 3 == 0 && count % 5 == 0">Fizzbuzz</h2>
+          <h2 avg-if="count % 3 != 0 && count % 5 != 0">_____</h2>
+        </div>
+        <div class="terminal">
+          <div class="top-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="code">&lt;div&nbsp;class=&quot;fizzbuzz&quot;&gt;</div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&nbsp;class=&quot;counter&quot;&gt;{ {count} }&lt;/h1&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;avg&#45;on:click=&quot;increment&quot;&nbsp;class=&quot;btn&nbsp;btn&#45;primary&quot;&gt;Click&nbsp;Me!&lt;/button&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;avg&#45;if=&quot;count&nbsp;%&nbsp;3&nbsp;==&nbsp;0&nbsp;&amp;&amp;&nbsp;count&nbsp;%&nbsp;5&nbsp;!=&nbsp;0&quot;&gt;Fizz&lt;/h2&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;avg&#45;if=&quot;count&nbsp;%&nbsp;3&nbsp;!=&nbsp;0&nbsp;&amp;&amp;&nbsp;count&nbsp;%&nbsp;5&nbsp;==&nbsp;0&quot;&gt;Buzz&lt;/h2&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;avg&#45;if=&quot;count&nbsp;%&nbsp;3&nbsp;==&nbsp;0&nbsp;&amp;&amp;&nbsp;count&nbsp;%&nbsp;5&nbsp;==&nbsp;0&quot;&gt;Fizzbuzz&lt;/h2&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;avg&#45;if=&quot;count&nbsp;%&nbsp;3&nbsp;!=&nbsp;0&nbsp;&amp;&amp;&nbsp;count&nbsp;%&nbsp;5&nbsp;!=&nbsp;0&quot;&gt;_____&lt;/h2&gt;
+          </div>
+          <div class="code">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer avg-comp="footer" />
+
+    <script type="module" src="../assets/js/fmtest.js"></script>
+
+    <script type="module" src="../AvgLib/anframe.js"></script>
+  </body>
+</html>
